@@ -1,7 +1,7 @@
 # Media Player Refactoring C++ Kata
 
 [![CI](https://github.com/Coding-Cuddles/media-player-refactoring-cpp-kata/actions/workflows/main.yml/badge.svg)](https://github.com/Coding-Cuddles/media-player-refactoring-cpp-kata/actions/workflows/main.yml)
-[![Replit](https://replit.com/badge?caption=Try%20with%20Replit&variant=small)](https://replit.com/new/github/Coding-Cuddles/media-player-refactoring-cpp-kata)
+[![Replit](https://img.shields.io/badge/Try%20with%20Replit-black?logo=replit)](https://replit.com/new/github/Coding-Cuddles/media-player-refactoring-cpp-kata)
 
 ## Overview
 
@@ -21,7 +21,7 @@ all types of media. This will be your starting point.
 In the first part, your task is to refactor the existing code such that each
 type of media player (audio, video, and image) has its own specific interface,
 instead of the monolithic `IMediaPlayer` interface. You should create
-`IAudioPlayer`, `IVideoPlayer`, and `IImageViewer` interfaces, each with a
+`IAudioPlayer`, `IVideoPlayer`, and `IImagePlayer` interfaces, each with a
 relevant method, and update the `AudioPlayer`, `VideoPlayer`, and `ImagePlayer`
 classes to implement these new interfaces.
 
@@ -96,7 +96,7 @@ the player is compatible with the media file format before trying to
 play/display the file.
 
 For the `MediaListPlayer`, we can update the `play_list` method to take a list
-of `IAudioPlayer`, `IVideoPlayer`, and `IImageViewer` instead of
+of `IAudioPlayer`, `IVideoPlayer`, and `IImagePlayer` instead of
 `IMediaPlayer`.
 
 In the `play_list` method, we should use the appropriate player based on the
