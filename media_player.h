@@ -2,6 +2,7 @@
 
 #include <stdexcept>
 #include <string>
+#include <vector>
 
 class MediaFile {
 public:
@@ -52,7 +53,7 @@ class MediaListPlayer {
 public:
     void play_list(const std::vector<MediaFile>& media_list, const Players& players)
     {
-        for (size_t i = 0; i < media_list.size(); i++) {
+        for (auto& media : media_list) {
             // Implementation...
         }
     }
