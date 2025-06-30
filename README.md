@@ -1,7 +1,6 @@
 # Media Player Refactoring C++ Kata
 
 [![CI](https://github.com/Coding-Cuddles/media-player-refactoring-cpp-kata/actions/workflows/main.yml/badge.svg)](https://github.com/Coding-Cuddles/media-player-refactoring-cpp-kata/actions/workflows/main.yml)
-[![Replit](https://img.shields.io/badge/Try%20with%20Replit-black?logo=replit)](https://replit.com/new/github/Coding-Cuddles/media-player-refactoring-cpp-kata)
 
 ## Overview
 
@@ -43,12 +42,12 @@ We have the `MediaFile` class to represent a media file, your task is to:
 
 1. Update the player interfaces to take `MediaFile` objects, e.g.:
 
-    ```cpp
-    class IAudioPlayer {
-    public:
-        virtual void play_audio(const MediaFile& file) = 0;
-    };
-    ```
+   ```cpp
+   class IAudioPlayer {
+   public:
+       virtual void play_audio(const MediaFile& file) = 0;
+   };
+   ```
 
 2. Create specialized players that can only handle certain formats (i.e.,
    `Mp3Player`, `FlacPlayer`, `WavPlayer`).
@@ -112,22 +111,18 @@ classes and interfaces.
 You can import this project into [Replit](https://replit.com),
 and it will handle all dependencies automatically.
 
-### Prerequisites
+## Prerequisites
 
-* [CMake 3.19+](https://cmake.org)
-* [Ninja](https://ninja-build.org)
-* [GTest](https://github.com/google/googletest)
+- A compatible C++ compiler that supports at least C++17
+- [CMake](https://cmake.org)
+- [GoogleTest](https://github.com/google/googletest)
+
+## Usage
 
 ### Build
 
 ```console
 make build
-```
-
-### Run main
-
-```console
-make run
 ```
 
 ### Run tests
