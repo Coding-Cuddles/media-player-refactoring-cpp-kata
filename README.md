@@ -1,4 +1,4 @@
-# Media Player Refactoring C++ Kata
+# Media player refactoring kata in C++
 
 [![CI](https://github.com/Coding-Cuddles/media-player-refactoring-cpp-kata/actions/workflows/main.yml/badge.svg)](https://github.com/Coding-Cuddles/media-player-refactoring-cpp-kata/actions/workflows/main.yml)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
