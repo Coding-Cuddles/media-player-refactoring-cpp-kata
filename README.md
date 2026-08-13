@@ -11,9 +11,9 @@ This kata complements [Clean Code: SOLID, Ep. 12 - Interface Segregation Princip
 The exercise involves refactoring a multimedia player system to adhere to this
 principle.
 
-The problem we have at hand involves different types of media -- audio, video,
-and images. We start with a monolithic `IMediaPlayer` interface that handles
-all types of media. This will be your starting point.
+The problem involves different types of media: audio, video, and images. We
+start with a monolithic `IMediaPlayer` interface that handles all types of
+media. This will be your starting point.
 
 ## Instructions
 
@@ -37,10 +37,10 @@ with different file types.
 
 Before, we had a separate player for each media type. We want to have media
 files that come in different formats (e.g., `.mp3`, `.flac`, `.wav` for audio,
-`.jpeg`, `.png` for images, and `.mp4`, `.mkv` for videos). And some players
-can only handle certain formats.
+`.jpeg`, `.png` for images, and `.mp4`, `.mkv` for videos), and some players can
+only handle certain formats.
 
-We have the `MediaFile` class to represent a media file, your task is to:
+We have the `MediaFile` class to represent a media file. Your task is to:
 
 1. Update the player interfaces to take `MediaFile` objects, e.g.:
 
@@ -92,8 +92,8 @@ We have the `MediaFile` class to represent a media file, your task is to:
 ### Exercise 3
 
 In the third part, we introduce the concept of a `MediaListPlayer`. This class
-accepts a list of media files and a corresponding list of players. It checks if
-the player is compatible with the media file format before trying to
+accepts a list of media files and a corresponding list of players. It checks
+whether the player is compatible with the media file format before trying to
 play/display the file.
 
 For the `MediaListPlayer`, we can update the `play_list` method to take a list
